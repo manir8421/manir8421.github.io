@@ -1,8 +1,8 @@
 :root {
   --ink: #1f2933;
   --muted: #667085;
-  --line: #d8ded8;
-  --paper: #f5f7f2;
+  --line: #d9e2ec;
+  --paper: #f4f7fb;
   --white: #ffffff;
   --accent: #1f6f58;
   --accent-dark: #174f40;
@@ -41,8 +41,8 @@ a {
   gap: 24px;
   min-height: 72px;
   padding: 14px clamp(20px, 5vw, 64px);
-  background: rgba(245, 247, 242, 0.92);
-  border-bottom: 1px solid rgba(216, 222, 216, 0.9);
+  background: rgba(244, 247, 251, 0.92);
+  border-bottom: 1px solid rgba(217, 226, 236, 0.9);
   backdrop-filter: blur(18px);
 }
 
@@ -120,7 +120,7 @@ a {
   min-height: calc(100vh - 72px);
   padding: clamp(44px, 7vw, 96px) clamp(20px, 5vw, 64px) 44px;
   background:
-    linear-gradient(125deg, rgba(31, 111, 88, 0.12), rgba(110, 63, 85, 0.08) 48%, rgba(185, 128, 46, 0.1)),
+    linear-gradient(125deg, rgba(31, 111, 88, 0.09), rgba(110, 63, 85, 0.06) 48%, rgba(49, 92, 150, 0.1)),
     var(--paper);
 }
 
@@ -196,12 +196,16 @@ h3 {
 }
 
 .button.primary {
-  color: var(--white);
-  background: var(--accent);
+  color: var(--ink);
+  background: var(--white);
+  border-color: var(--line);
 }
 
-.button.primary:hover {
-  background: var(--accent-dark);
+.button:hover,
+.button:focus-visible {
+  color: var(--white);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .button.secondary {
@@ -399,7 +403,7 @@ h3 {
   padding: 10px 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #f3f6f2;
+  background: #f7f9fc;
   color: var(--ink);
   font-size: 0.92rem;
   font-weight: 800;
@@ -463,11 +467,27 @@ h3 {
 footer {
   padding: 28px clamp(20px, 5vw, 64px);
   color: var(--muted);
-  background: #e7ece5;
+  background: #e8eef5;
 }
 
 footer p {
   margin: 0;
+}
+
+.hero-actions .button,
+.publication-links .button {
+  color: var(--ink);
+  background: var(--white);
+  border-color: var(--line);
+}
+
+.hero-actions .button:hover,
+.hero-actions .button:focus-visible,
+.publication-links .button:hover,
+.publication-links .button:focus-visible {
+  color: var(--white);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 @media (max-width: 1020px) {
