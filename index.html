@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=menu-fix" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -22,12 +22,6 @@
         <img class="brand-photo" src="assets/md-maniruzzaman.jpg" width="38" height="38" alt="" />
         <span>Md Maniruzzaman</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="sr-only">Menu</span>
-      </button>
       <nav id="site-nav" class="site-nav" data-nav>
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -36,6 +30,22 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="header-menu">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="section-menu" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav id="section-menu" class="menu-nav" data-menu-nav>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -308,6 +318,6 @@
       <p>© 2026 Md Maniruzzaman. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=menu-fix"></script>
   </body>
 </html>
