@@ -43,21 +43,9 @@ updateHeader();
 updateActiveLink();
 
 contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
   const formData = new FormData(contactForm);
-  const senderEmail = String(formData.get("email") || "").trim();
   const subject = String(formData.get("subject") || "").trim();
-  const message = String(formData.get("message") || "").trim();
-  const body = [
-    `Sender email: ${senderEmail}`,
-    "",
-    "Message:",
-    message
-  ].join("\n");
+  const subjectOutput = contactForm.querySelector("[data-subject-output]");
 
-  const mailto = new URL("mailto:mmaniruzzaman@crimson.ua.edu");
-  mailto.searchParams.set("subject", subject || "Portfolio message");
-  mailto.searchParams.set("body", body);
-  window.location.href = mailto.toString();
+  subjectOutput.value = subject || "New portfolio message";
 });
