@@ -55,14 +55,14 @@ a {
   white-space: nowrap;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-photo {
+  display: block;
   width: 38px;
   height: 38px;
-  border-radius: 8px;
-  color: var(--white);
-  background: linear-gradient(135deg, var(--accent), var(--blue));
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(31, 41, 51, 0.12);
 }
 
 .site-nav {
@@ -370,10 +370,19 @@ h3 {
 .publication-panel {
   padding: clamp(22px, 4vw, 36px);
   align-items: center;
+  grid-template-columns: 1fr;
 }
 
 .publication-links {
   margin-top: 22px;
+  flex-wrap: nowrap;
+}
+
+.publication-links .button {
+  flex: 1 1 0;
+  padding-right: 12px;
+  padding-left: 12px;
+  white-space: nowrap;
 }
 
 .focus-panel {
@@ -405,16 +414,35 @@ h3 {
   margin-bottom: 0;
 }
 
-.publication-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.publication-areas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 18px;
   padding: 0;
-  margin: 0;
+  margin: 8px 0 0;
   list-style: none;
 }
 
-.publication-tags li,
+.publication-areas li {
+  position: relative;
+  padding-left: 18px;
+  color: #48545f;
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.publication-areas li::before {
+  content: "";
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 .social-links a {
   padding: 10px 12px;
   border: 1px solid var(--line);
@@ -638,6 +666,18 @@ footer p {
 
   .research-grid,
   .skill-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-links {
+    flex-wrap: wrap;
+  }
+
+  .publication-links .button {
+    flex-basis: calc(50% - 8px);
+  }
+
+  .publication-areas {
     grid-template-columns: 1fr;
   }
 
