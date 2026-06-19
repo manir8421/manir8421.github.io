@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=menu-fix" />
+    <link rel="stylesheet" href="styles.css?v=projects-order-1" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -25,9 +25,11 @@
       <nav id="site-nav" class="site-nav" data-nav>
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#projects">Current Projects</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-menu">
@@ -40,9 +42,11 @@
         <nav id="section-menu" class="menu-nav" data-menu-nav>
           <a href="#about">About</a>
           <a href="#research">Research</a>
+          <a href="#projects">Current Projects</a>
           <a href="#education">Education</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
+          <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -60,6 +64,7 @@
           <div class="hero-actions" aria-label="Profile links">
             <a class="button primary" href="https://www.linkedin.com/in/manir8421/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="button secondary" href="https://github.com/manir8421" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="https://www.facebook.com/manir8421" target="_blank" rel="noreferrer">Facebook</a>
             <a class="button secondary" href="assets/Resume_Maniruzzaman.pdf" target="_blank" rel="noreferrer">CV</a>
           </div>
         </div>
@@ -74,7 +79,7 @@
       <section class="section about-section" id="about">
         <div class="section-heading">
           <p class="eyebrow">About</p>
-          <h2>Engineer, researcher, and AI practitioner</h2>
+          <h2>Researcher, Engineer and AI practitioner</h2>
         </div>
         <div class="about-grid">
           <div class="narrative">
@@ -111,7 +116,7 @@
       <section class="section band" id="research">
         <div class="section-heading">
           <p class="eyebrow">Research</p>
-          <h2>Applied AI for health, energy, and intelligent systems</h2>
+          <h2>Applied ML, DL, AI for Healthcare, Sensor, Internet of Things (IoT) and Intelligent systems</h2>
         </div>
         <div class="research-grid">
           <article class="card">
@@ -149,10 +154,20 @@
         </div>
       </section>
 
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Current Projects</p>
+          <h2>Research and development work currently in progress</h2>
+        </div>
+        <div class="projects-grid" data-projects aria-live="polite">
+          <p class="projects-status">Loading current projects...</p>
+        </div>
+      </section>
+
       <section class="section" id="education">
         <div class="section-heading">
           <p class="eyebrow">Education</p>
-          <h2>Academic training</h2>
+          <h2>Academic Transition/History</h2>
         </div>
         <div class="timeline">
           <article class="timeline-item">
@@ -185,7 +200,7 @@
       <section class="section split-section" id="publications">
         <div class="section-heading">
           <p class="eyebrow">Publications</p>
-          <h2>Research output, kept current through Scholar</h2>
+          <h2>Scholarly work and research contributions</h2>
         </div>
         <div class="publication-panel">
           <div>
@@ -226,7 +241,7 @@
       <section class="section band" id="experience">
         <div class="section-heading">
           <p class="eyebrow">Experience</p>
-          <h2>Broadcast, telecom, and technical operations</h2>
+          <h2>Broadcast, Telecommunication and Technical operations</h2>
         </div>
         <div class="experience-list">
           <article>
@@ -278,6 +293,35 @@
         </div>
       </section>
 
+      <section class="section band gallery-section" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Selected moments from my academic and professional journey</h2>
+        </div>
+        <div class="gallery" data-gallery aria-roledescription="carousel" aria-label="Photo gallery">
+          <div class="gallery-viewport">
+            <div class="gallery-track" data-gallery-track>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_01.jpg" alt="Gallery photo 1" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_02.jpg" alt="Gallery photo 2" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_03.jpg" alt="Gallery photo 3" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_04.jpg" alt="Gallery photo 4" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_05.jpg" alt="Gallery photo 5" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_06.jpg" alt="Gallery photo 6" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_07.jpg" alt="Gallery photo 7" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_08.jpg" alt="Gallery photo 8" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_09.jpg" alt="Gallery photo 9" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_10.jpg" alt="Gallery photo 10" /></figure>
+              <figure class="gallery-slide" data-gallery-slide><img src="Web_Image/img_11.jpg" alt="Gallery photo 11" /></figure>
+            </div>
+          </div>
+          <button class="gallery-control gallery-control-prev" type="button" data-gallery-prev aria-label="Previous image">&#8592;</button>
+          <button class="gallery-control gallery-control-next" type="button" data-gallery-next aria-label="Next image">&#8594;</button>
+          <div class="gallery-status" aria-live="polite">
+            <span data-gallery-current>1</span><span aria-hidden="true"> / </span><span data-gallery-total>11</span>
+          </div>
+        </div>
+      </section>
+
       <section class="section contact-section" id="contact">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
@@ -318,6 +362,6 @@
       <p>© 2026 Md Maniruzzaman. All rights reserved.</p>
     </footer>
 
-    <script src="script.js?v=menu-fix"></script>
+    <script src="script.js?v=projects-2"></script>
   </body>
 </html>
